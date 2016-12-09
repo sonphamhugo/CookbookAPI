@@ -85,7 +85,7 @@ namespace Web_Service.Controllers
                 return Request.CreateResponse(HttpStatusCode.BadRequest);
             }
 
-            db.Entry(nguoidung).State = System.Data.Entity.EntityState.Modified;
+            db.Entry(nguoidung).State = EntityState.Modified;
 
             try
             {

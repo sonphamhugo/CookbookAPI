@@ -249,7 +249,7 @@ namespace Web_Service.Controllers
                 return Request.CreateResponse(HttpStatusCode.BadRequest);
             }
 
-            db.Entry(monan).State = System.Data.Entity.EntityState.Modified;
+            db.Entry(monan).State = EntityState.Modified;
 
             try
             {
